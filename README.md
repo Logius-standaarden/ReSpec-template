@@ -8,11 +8,20 @@ Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PD
 
 ### Gebruikers instructie
 Om aanpassingen te maken zijn er 2 opties:
-- De configuratie van het document aanpassing in ["js/config.js"](js/config.js)
+- De configuratie van het document aanpassing in de config files
 - Markdown files toevoegen
 
-De **configuratie file** bevat informatie over de organisatie en over 
-de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) voor meer informatie over de configuratie opties.
+De **configuratie files** bevat informatie over de organisatie en over 
+de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
+voor meer informatie over de configuratieopties. De files zijn gesplitst in 2 files:
+[organisation_config.js](organisation_config.js) en [document_config.js](document_config.js)  
+
+De organisation_config bevat informatie over de organisatie, de informatie in deze file 
+zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
+zelf te hosten zodat hij in alle documentatie van de organisatie gebruikt kan worden en
+niet elke keer gekopieerd te worden.
+
+De document_config zal informatie bevatten die alleen relevant is voor het huidige document.
 
 **Markdown files** bevatten de content van het document. Alle content
 kan in 1 document, maar het is aan te raden om de content te splitsen
