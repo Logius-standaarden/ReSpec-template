@@ -24,4 +24,13 @@ const organisationConfig = {
         width: 44,
         url: "https://www.logius.nl/standaarden",
     },
+	
+	localBiblio: {
+	"SemVer": {
+            href: "https://semver.org",
+            title: "Semantic Versioning 2.0.0",
+            authors: ["T. Preston-Werner"],
+            date: "June 2013"
+        }
+    },
 }
