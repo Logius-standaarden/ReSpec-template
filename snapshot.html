@@ -41,6 +41,8 @@ dfn{cursor:pointer}
 <title>Titel</title>
   
   
+  
+  
 <link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
   
 
@@ -138,6 +140,29 @@ var[data-type]::after{content:attr(data-type);transform:translateX(-50%) transla
 var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </style>
 <script id="initialUserConfig" type="application/json">{
+  "nl_organisationName": "Logius",
+  "nl_organisationStylesURL": "https://publicatie.centrumvoorstandaarden.nl/respec/style/",
+  "nl_organisationPrefix": "LS-",
+  "nl_organisationPublishURL": "https://publicatie.centrumvoorstandaarden.nl/",
+  "nl_logo": {
+    "src": "https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg",
+    "alt": "Logius",
+    "id": "Logius",
+    "height": 77,
+    "width": 44,
+    "url": "https://www.logius.nl/standaarden"
+  },
+  "localBiblio": {
+    "SemVer": {
+      "href": "https://semver.org",
+      "title": "Semantic Versioning 2.0.0",
+      "authors": [
+        "T. Preston-Werner"
+      ],
+      "date": "June 2013",
+      "id": "semver"
+    }
+  },
   "specStatus": "WV",
   "specType": "HR",
   "pubDomain": "dk",
@@ -161,32 +186,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "github": "https://github.com/Logius-standaarden/API-Design-Rules",
   "addSectionLinks": true,
   "nl_addReleaseTagTitle": true,
-  "nl_organisationName": "Logius",
-  "nl_organisationStylesURL": "https://publicatie.centrumvoorstandaarden.nl/respec/style/",
-  "nl_organisationPrefix": "LS-",
   "nl_markdownEmbedImageInFigure": true,
-  "nl_organisationPublishURL": "https://publicatie.centrumvoorstandaarden.nl/",
-  "nl_logo": {
-    "src": "https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg",
-    "alt": "Logius",
-    "id": "Logius",
-    "height": 77,
-    "width": 44,
-    "url": "https://www.logius.nl/standaarden"
-  },
-  "localBiblio": {
-    "SemVer": {
-      "href": "https://semver.org",
-      "title": "Semantic Versioning 2.0.0",
-      "authors": [
-        "T. Preston-Werner"
-      ],
-      "date": "June 2013",
-      "id": "semver"
-    }
-  },
   "publishISODate": "2022-06-24T00:00:00.000Z",
-  "generatedSubtitle": "Werkversie 30 augustus 2022"
+  "generatedSubtitle": "Werkversie 14 september 2022"
 }</script>
 <link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-WV.css"></head>
 
@@ -197,7 +199,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <h2>
       Logius Handreiking<br>
       Werkversie
-      <time class="dt-published" datetime="2022-06-24">30 augustus 2022</time>
+      <time class="dt-published" datetime="2022-06-24">14 september 2022</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
@@ -251,7 +253,7 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>index.
 <p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">4. </bdi>Lijst met figuren</a>.</p>
 <p><figure id="fig-onderschrift"><img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid" title="Onderschrift"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Onderschrift</span></figcaption></figure></p>
 </section><section id="referenties"><div class="header-wrapper"><h3 id="x2-2-referenties"><bdi class="secno">2.2 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.2"></a></div>
-<p>Referentie uit locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Lijst staat in <code>config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
+<p>Referentie uit locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
 </section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-3-optioneel"><bdi class="secno">2.3 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.3"></a></div>
 <p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
 <pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
