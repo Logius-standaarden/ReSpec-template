@@ -34,3 +34,15 @@ aan de [index.html](index.html). Je voegt hem toe door
 toe te voegen aan de ```<body>``` van de index file. Vervang "filenaam.md" door de naam 
 van de markdown file die je toe wilt voegen.
 De volgorde van de sections bepaald de volgorde in het resulterende document.
+
+### Automatische controles
+Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
+uitgevoerd:  
+
+Een WCAG-check (Web Content Accessibility Guidelines), Deze guidlines
+gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
+van webapplicaties verbeterd voor zowel verschillende apparaten 
+als voor mensen met een beperking.
+
+Een link-check, Deze check controleert of alle links die in het 
+document staan ook naar iets wijzen.
