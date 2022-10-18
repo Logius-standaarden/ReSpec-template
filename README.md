@@ -6,6 +6,12 @@ De dynamische pagina is [hier](https://logius-standaarden.github.io/ReSpec-templ
 
 Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren.
 
+### Vereiste voor gebruik
+- Kennis van git/github
+- Kennis van markdown
+- Kennis van de vorm van een Javascript object
+- Een plek om de documentatie te hosten
+
 ### Gebruikers instructie
 Om aanpassingen te maken zijn er 2 opties:
 - De configuratie van het document aanpassing in de config files
@@ -39,10 +45,14 @@ De volgorde van de sections bepaald de volgorde in het resulterende document.
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
 uitgevoerd:  
 
-Een WCAG-check (Web Content Accessibility Guidelines), Deze guidlines
+Een WCAG-check (Web Content Accessibility Guidelines), Deze guidelines
 gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
 van webapplicaties verbeterd voor zowel verschillende apparaten 
 als voor mensen met een beperking.
 
 Een link-check, Deze check controleert of alle links die in het 
 document staan ook naar iets wijzen.
+
+### Publiceren van documenten
+Na het pullen van een nieuwe versie word er een statische HTML en een PDF-versie gemaakt.
+ Deze kunnen dan gehost worden op een plek met publieke documentatie.
