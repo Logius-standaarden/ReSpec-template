@@ -1,4 +1,4 @@
-const organisationConfig = {
+var organisationConfig = {
     // nl_organisationName is used in the header (and Sotd)
     nl_organisationName: "Logius",
 
