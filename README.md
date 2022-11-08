@@ -55,7 +55,7 @@ gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
 van webapplicaties verbeterd voor zowel verschillende apparaten 
 als voor mensen met een beperking.
 
-Een link-check, Deze check controleert of alle links die in het 
+Een link-check, deze check controleert of alle links die in het 
 document staan ook naar iets wijzen.
 
 ### Publiceren van documenten
