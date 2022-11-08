@@ -1,4 +1,4 @@
-## Template document ReSpec
+## ReSpec template instructies
 
 Gebruik de knop [_Use this template_](https://github.com/Logius-standaarden/ReSpec-template/generate) om aan de slag te gaan.
 
@@ -6,10 +6,19 @@ De dynamische pagina is [hier](https://logius-standaarden.github.io/ReSpec-templ
 
 Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren.
 
+### Vereiste voor gebruik
+- Kennis van git/github
+- Kennis van markdown
+- Kennis van de vorm van een Javascript object
+- Een plek om de documentatie te hosten
+
 ### Gebruikers instructie
-Om aanpassingen te maken zijn er 2 opties:
+Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.  
+Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/)  
+
+Aanpassingen maken aan het document gaat op 2 manieren:
 - De configuratie van het document aanpassing in de config files
-- Markdown files toevoegen
+- Markdown files toevoegen/veranderen
 
 De **configuratie files** bevat informatie over de organisatie en over 
 de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
@@ -39,10 +48,14 @@ De volgorde van de sections bepaald de volgorde in het resulterende document.
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
 uitgevoerd:  
 
-Een WCAG-check (Web Content Accessibility Guidelines), Deze guidlines
+Een WCAG-check (Web Content Accessibility Guidelines), deze guidelines
 gemaakt door W3C zorgen voor een verbetering van de toegankelijkheid
 van webapplicaties verbeterd voor zowel verschillende apparaten 
 als voor mensen met een beperking.
 
 Een link-check, Deze check controleert of alle links die in het 
 document staan ook naar iets wijzen.
+
+### Publiceren van documenten
+Na het pullen van een nieuwe versie word er een statische HTML en een PDF-versie gemaakt.
+ Deze kunnen dan gehost worden op een plek met publieke documentatie.
