@@ -16,7 +16,7 @@ Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PD
 
 ### Gebruikers instructie
 Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.  
-Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/)  
+Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/).
 
 Aanpassingen maken aan het document gaat op 2 manieren:
 - De configuratie van het document aanpassing in de config files
@@ -25,7 +25,7 @@ Aanpassingen maken aan het document gaat op 2 manieren:
 De **configuratie files** bevat informatie over de organisatie en over 
 de status van het document. Bekijk de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
 voor meer informatie over de configuratieopties. De files zijn gesplitst in 2 files:
-[organisation-config.js](js/organisation-config.js) en [config.js](js/config.js)  
+[organisation-config.js](js/organisation-config.js) en [config.js](js/config.js).
 
 De organisation_config bevat informatie over de organisatie, de informatie in deze file 
 zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
