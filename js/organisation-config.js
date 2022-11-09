@@ -4,7 +4,7 @@ var organisationConfig = {
 
     // this url points to the folder where organsation specific css files are stored
     // defaults to https://tools.geostandaarden.nl/respec/style/ if not set
-    nl_organisationStylesURL: "https://publicatie.centrumvoorstandaarden.nl/respec/style/",
+    nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
 
     // prefix for the names of company specific css, svg and ico prefixes
     // defaults to "GN-"
@@ -12,12 +12,12 @@ var organisationConfig = {
 
     // nl_organisationPublishURL points to organisation specifica publication page, used in header
     // defaults to  https://docs.geostandaarden.nl/"
-    nl_organisationPublishURL: "https://publicatie.centrumvoorstandaarden.nl/",
+    nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
 
     // nl_logo refers to company logo
     // defaults to https://tools.geostandaarden.nl/respec/style/logos/Geonovum.svg
     nl_logo: {
-        src: "https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg",
+        src: "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
         alt: "Logius",
         id: "Logius",
         height: 77,
