@@ -2,17 +2,18 @@
 
 ReSpec is een tool om html en pdf documenten te genereren op basis van markdown content.
 
-Gebruik de knop [_Use this template_](https://github.com/Logius-standaarden/ReSpec-template/generate) om aan de slag te gaan.
+Gebruik de knop [_Use this template_](https://github.com/Logius-standaarden/ReSpec-template/generate) om aan de slag te gaan. Dit maakt een kopie van de template in uw eigen GitHub repository die dan aangepast en uitgebreid kan worden.
 
-De dynamische pagina is [hier](https://logius-standaarden.github.io/ReSpec-template/) te zien.
+De dynamische pagina is van het template document [hier](https://logius-standaarden.github.io/ReSpec-template/) te zien.
 
-Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren.
+Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze worflows worden 
+automatisch gerunt zodra er een aanpassing gedaan word aan de main branch.
 
 ### Vereiste voor gebruik
 - Kennis van git/github
-- Kennis van markdown
+- Kennis van markdown en/of HTML
 - Kennis van de vorm van een Javascript object
-- Een plek om de documentatie te hosten
+- Een webserver om de documentatie te hosten
 
 ### Gebruikers instructie
 Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE te gebruiken. Die geeft een voorbeeld van hoe de markdown eruit zal zien, kan laten zien of de config files nog in de correcte vorm zijn en kan helpen in het gebruik van git.  
@@ -58,6 +59,8 @@ als voor mensen met een beperking.
 Een link-check, deze check controleert of alle links die in het 
 document staan ook naar iets wijzen.
 
+outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repository.
+
 ### Publiceren van documenten
-Na het pullen van een nieuwe versie word er een statische HTML en een PDF-versie gemaakt.
- Deze kunnen dan gehost worden op een plek met publieke documentatie.
+Na het pullen van een nieuwe versie wordt er een statische HTML en een PDF-versie gemaakt.
+Dit zijn snapshot.html en doc.pdf, deze files kunnen dan gepubliceerd worden.
