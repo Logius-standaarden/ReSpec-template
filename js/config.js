@@ -11,6 +11,7 @@ var respecConfig = {
     // previousPublishVersion: "(none)",
     //  previousPublishDate: "(none)",
     //  previousMaturity: "WV",
+    content: {"ch01": "informative", "ch02": ""},
     editors:
         [
             {
