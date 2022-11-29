@@ -29,7 +29,8 @@ jobs:
       - name: Gather files
         run: |         
          rm -f *.md *.html
-         mv ~/static/snapshot.html index.html
+         mv ~/static/* ./
+         mv snapshot.html index.html
          mkdir content
          shopt -s extglob
          mv !(content) content
