@@ -41,11 +41,9 @@ in verschillende files met een toepasselijke naam om onderhoud
 makkelijker te maken.
 
 Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
-aan de [index.html](index.html). Je voegt hem toe door  
-```<section data-include-format="markdown" data-include="filenaam.md"></section>```  
-toe te voegen aan de ```<body>``` van de index file. Vervang "filenaam.md" door de naam 
-van de markdown file die je toe wilt voegen.
-De volgorde van de sections bepaald de volgorde in het resulterende document.
+aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
+toe te voegen aan het ```content``` object in de ```config.js```. 
+De volgorde van ```content``` bepaald de volgorde in het resulterende document.
 
 ### Automatische controles
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
