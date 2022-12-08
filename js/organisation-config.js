@@ -6,10 +6,6 @@ var organisationConfig = {
     // defaults to https://tools.geostandaarden.nl/respec/style/ if not set
     nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
 
-    // prefix for the names of company specific css, svg and ico prefixes
-    // defaults to "GN-"
-    nl_organisationPrefix: "LS-",
-
     // nl_organisationPublishURL points to organisation specifica publication page, used in header
     // defaults to  https://docs.geostandaarden.nl/"
     nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
@@ -23,6 +19,25 @@ var organisationConfig = {
         height: 77,
         width: 44,
         url: "https://www.logius.nl/standaarden",
+    },
+
+    sotdText: {
+        nl: {
+          sotd: "Status van dit document",
+          def: `Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
+          wv: `Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door goedgekeurde consultatieversie.`,
+          cv: `Dit is een door goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar `,
+          vv: `Dit is een definitief concept van de volgende versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
+          basis: "Dit is een document zonder officiële status.",
+        },
+        en: {
+          sotd: "Status of This Document",
+          def: `This is the definitive version of this document. Edits resulting from consultations have been applied.`,
+          wv: `This is a draft that could be altered, removed or replaced by other documents. It is not a recommendation approved by.`,
+          cv: `This is a proposed recommendation approved by. Comments regarding this document may be sent to `,
+          vv: `This is the definitive concept of the coming release of this document. Edits resulting from consultations have been applied.`,
+          basis: "This document has no official standing.",
+        },
     },
 	
 	localBiblio: {
