@@ -123,6 +123,8 @@ var organisationConfig = {
     def: "#154273",
     wv: "#32a852",
   },
+  // REVIEW: Voor de licentietekst lijkt standaard een engelse tekst gebruikt te worden
+  //    This document is licensed under a Creative Commons 0 Public Domain Dedication. 
   licenses: {
     cc0: {
       name: "Creative Commons 0 Public Domain Dedication",

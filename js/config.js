@@ -29,8 +29,10 @@ var respecConfig = {
     ],
   github: "https://github.com/Logius-standaarden/ReSpec-template",
 
-
-  // Create PDF and link to file in header:
+  // REVIEW: moet hier nog niet die postProces voor mermaid komen te staan?
+    postProcess: [window.respecMermaid.createFigures],
+ 
+    // Create PDF and link to file in header:
   // alternateFormats: [
   //     {
   //         label: "pdf",
