@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 32.1.10">
+<meta name="generator" content="ReSpec 32.6.0">
 <style>
 .issue-label{text-transform:initial}
 .warning>p:first-child{margin-top:0}
@@ -46,7 +46,7 @@ dfn{cursor:pointer}
   
 <title>Default</title>
   
-<link rel="shortcut icon" type="image/x-icon" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/logius.ico">
+<link rel="shortcut icon" type="image/x-icon" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/logius.ico">
   
 
 <style id="respec-mainstyle">
@@ -68,8 +68,6 @@ a.bibref{text-decoration:none}
 }
 #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
 cite .bibref{font-style:normal}
-code{color:#c63501}
-th code{color:inherit}
 a[href].orcid{padding-left:4px;padding-right:4px}
 a[href].orcid>svg{margin-bottom:-2px}
 .toc a,.tof a{text-decoration:none}
@@ -136,24 +134,146 @@ ul.index code{color:inherit}
 .hljs-link{text-decoration:underline}
 </style>
 <style>
-var{position:relative;cursor:pointer}
-var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
-var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
-var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
-var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+.sidelabel{position:fixed;-webkit-transform-origin:top right;right:100%;top:0;-webkit-transform:rotate(-90deg);padding:4px 50px 4px 10px;color:#fff;white-space:nowrap;z-index:1}
 </style>
 <script id="initialUserConfig" type="application/json">{
   "nl_organisationName": "Logius",
   "nl_organisationStylesURL": "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
-  "nl_organisationPrefix": "LS-",
   "nl_organisationPublishURL": "https://gitdocumentatie.logius.nl/publicatie/",
-  "nl_logo": {
-    "src": "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
-    "alt": "Logius",
-    "id": "Logius",
-    "height": 77,
-    "width": 44,
-    "url": "https://www.logius.nl/standaarden"
+  "logos": [
+    {
+      "src": "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
+      "alt": "Logius",
+      "id": "Logius",
+      "height": 77,
+      "width": 44,
+      "url": "https://www.logius.nl/standaarden"
+    }
+  ],
+  "addSectionLinks": true,
+  "localizationStrings": {
+    "en": {
+      "wv": "Draft",
+      "cv": "Recommendation",
+      "vv": "Proposed recommendation",
+      "def": "Definitive version",
+      "basis": "Document",
+      "eo": "Outdated version",
+      "tg": "Rescinded version",
+      "no": "Norm",
+      "st": "Standard",
+      "im": "Information model",
+      "pr": "Guideline",
+      "hr": "Guide",
+      "wa": "Proposed recommendation",
+      "al": "General",
+      "bd": "Governance documentation",
+      "bp": "Best practice"
+    },
+    "nl": {
+      "wv": "Werkversie",
+      "cv": "Consultatieversie",
+      "vv": "Versie ter vaststelling",
+      "def": "Vastgestelde versie",
+      "basis": "Document",
+      "eo": "Verouderde versie",
+      "tg": "Teruggetrokken versie",
+      "no": "Norm",
+      "st": "Standaard",
+      "im": "Informatiemodel",
+      "pr": "Praktijkrichtlijn",
+      "hr": "Handreiking",
+      "wa": "Werkafspraak",
+      "al": "Algemeen",
+      "bd": "Beheerdocumentatie",
+      "bp": "Best practice"
+    }
+  },
+  "specTypeText": {
+    "en": {
+      "no": "Norm",
+      "st": "Standard",
+      "im": "Information model",
+      "pr": "Guideline",
+      "hr": "Guide",
+      "wa": "Proposed recommendation",
+      "al": "General",
+      "bd": "Governance documentation",
+      "bp": "Best practice"
+    },
+    "nl": {
+      "no": "Norm",
+      "st": "Standaard",
+      "im": "Informatiemodel",
+      "pr": "Praktijkrichtlijn",
+      "hr": "Handreiking",
+      "wa": "Werkafspraak",
+      "al": "Algemeen",
+      "bd": "Beheerdocumentatie",
+      "bp": "Best practice"
+    }
+  },
+  "specStatusText": {
+    "en": {
+      "wv": "Draft",
+      "cv": "Recommendation",
+      "vv": "Proposed recommendation",
+      "def": "Definitive version",
+      "basis": "Document",
+      "eo": "Outdated version",
+      "tg": "Rescinded version"
+    },
+    "nl": {
+      "wv": "Werkversie",
+      "cv": "Consultatieversie",
+      "vv": "Versie ter vaststelling",
+      "def": "Vastgestelde versie",
+      "basis": "Document",
+      "eo": "Verouderde versie",
+      "tg": "Teruggetrokken versie"
+    }
+  },
+  "sotdText": {
+    "nl": {
+      "sotd": "Status van dit document",
+      "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.",
+      "cv": "Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "vv": "Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
+      "basis": "Dit is een document zonder officiële status."
+    },
+    "en": {
+      "sotd": "Status of This Document",
+      "def": "This is the definitive version of this document. Edits resulting from consultations have been applied.",
+      "wv": "This is a draft that could be altered, removed or replaced by other documents. It is not a recommendation approved by TO.",
+      "cv": "This is a proposed recommendation approved by TO. Comments regarding this document may be sent to ",
+      "vv": "This is the definitive concept of this document. Edits resulting from consultations have been applied.",
+      "basis": "This document has no official standing."
+    }
+  },
+  "labelColor": {
+    "def": "#154273",
+    "wv": "#32a852"
+  },
+  "licenses": {
+    "cc0": {
+      "name": "Creative Commons 0 Public Domain Dedication",
+      "short": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/CC-Licentie.svg"
+    },
+    "cc-by": {
+      "name": "Creative Commons Attribution 4.0 International Public License",
+      "short": "CC-BY",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/cc-by.svg"
+    },
+    "cc-by-nd": {
+      "name": "Creative Commons Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal",
+      "short": "CC-BY-ND",
+      "url": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
+      "image": "https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg"
+    }
   },
   "localBiblio": {
     "SemVer": {
@@ -166,6 +286,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "semver"
     }
   },
+  "useLogo": true,
+  "useLabel": true,
+  "license": "cc0",
   "specStatus": "WV",
   "specType": "HR",
   "pubDomain": "dk",
@@ -191,14 +314,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "companyURL": "https://github.com/Logius-standaarden"
     }
   ],
-  "github": "https://github.com/Logius-standaarden/API-Design-Rules",
-  "addSectionLinks": true,
-  "nl_addReleaseTagTitle": true,
-  "nl_markdownEmbedImageInFigure": true,
-  "publishISODate": "2022-06-24T00:00:00.000Z",
-  "generatedSubtitle": "Werkversie 01 december 2022"
+  "github": "https://github.com/Logius-standaarden/ReSpec-template"
 }</script>
-<link rel="stylesheet" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/LS-WV.css"></head>
+<link rel="stylesheet" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/base.css"></head>
 
 <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg" width="44">
@@ -207,15 +325,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <h2>
       Logius Handreiking<br>
       Werkversie
-      <time class="dt-published" datetime="2022-06-24">01 december 2022</time>
+      <time class="dt-published" datetime="2022-06-24">22 december 2022</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://logius-standaarden.github.io/API-Design-Rules/">https://logius-standaarden.github.io/API-Design-Rules/</a>
+              <a class="u-url status" href="https://logius-standaarden.github.io/ReSpec-template/">https://logius-standaarden.github.io/ReSpec-template/</a>
             </dd><dt>Laatst gepubliceerde versie:</dt><dd>
               <a href="https://gitdocumentatie.logius.nl/publicatie/dk/template/">https://gitdocumentatie.logius.nl/publicatie/dk/template/</a>
             </dd>
-      <dt>Laatste werkversie:</dt><dd><a href="https://logius-standaarden.github.io/API-Design-Rules/">https://logius-standaarden.github.io/API-Design-Rules/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://logius-standaarden.github.io/ReSpec-template/">https://logius-standaarden.github.io/ReSpec-template/</a></dd>
       
       
       
@@ -230,13 +348,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <span class="p-name fn">Logius Standaarden</span> (<a class="p-org org h-org" href="https://github.com/Logius-standaarden">Logius</a>)
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Logius-standaarden/API-Design-Rules/">GitHub Logius-standaarden/API-Design-Rules</a>
+    <a href="https://github.com/Logius-standaarden/ReSpec-template/">GitHub Logius-standaarden/ReSpec-template</a>
   </dd><dd>
-    <a href="https://github.com/Logius-standaarden/API-Design-Rules/issues/">Dien een melding in</a>
+    <a href="https://github.com/Logius-standaarden/ReSpec-template/issues/">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Logius-standaarden/API-Design-Rules/commits/">Revisiehistorie</a>
+    <a href="https://github.com/Logius-standaarden/ReSpec-template/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Logius-standaarden/API-Design-Rules/pulls/">Pull requests</a>
+    <a href="https://github.com/Logius-standaarden/ReSpec-template/pulls/">Pull requests</a>
   </dd>
     </dl>
     
@@ -244,20 +362,25 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
     <p class="copyright" lang="en">
           This document is licensed under a
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.
+          <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/" class="subfoot">Creative Commons 0 Public Domain Dedication</a>.
         </p>
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Tekst</p>
 </section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het Technisch Overleg goedgekeurde consultatieversie.<p></p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.2 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.3 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">4. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.2 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.3 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">3. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">4. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <p>Bijvoorbeeld een introductie.</p>
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
 Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
 </p></div></section><section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
 <section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-1-afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.1"></a></div>
 <p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">4. </bdi>Lijst met figuren</a>.</p>
-<p><figure id="fig-onderschrift"><img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid" title="Onderschrift"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Onderschrift</span></figcaption></figure></p>
+<p>
+      </p><figure id="fig-onderschrift">
+        <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
+        <figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Onderschrift</span></figcaption>
+      </figure>
+    <p></p>
 </section><section id="referenties"><div class="header-wrapper"><h3 id="x2-2-referenties"><bdi class="secno">2.2 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.2"></a></div>
 <p>Referentie uit locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
 </section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-3-optioneel"><bdi class="secno">2.3 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.3"></a></div>
@@ -536,4 +659,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel" style="background-color: #32a852;">Logius Handreiking - Werkversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
