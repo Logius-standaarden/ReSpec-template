@@ -14,6 +14,7 @@ var organisationConfig = {
   }],
   
   addSectionLinks: true,
+  postProcess: [window.respecMermaid.createFigures],
 
   localizationStrings: {
     en: {
