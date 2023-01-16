@@ -52,6 +52,9 @@ Deze code voegt 2 markdown files toe:
 
 voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
 
+Deze classes zijn ook binnen de markdown files te gebruiken op de volgene manier:
+```<div class="example">voorbeeld</div>```
+
 ### Automatische controles
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
 uitgevoerd:  
