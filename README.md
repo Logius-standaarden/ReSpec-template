@@ -45,6 +45,13 @@ aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel rele
 toe te voegen aan het ```content``` object in de ```config.js```. 
 De volgorde van ```content``` bepaald de volgorde in het resulterende document.
 
+```content: {"ch01": "informative", "mermaid": ""},```
+Deze code voegt 2 markdown files toe:
+- `ch01.md` met de CSS class `informative`
+- `mermaid.md` zonder CSS class
+
+voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
+
 ### Automatische controles
 Bij het uploaden van een nieuwe versie naar github worden er via github actions 2 controles 
 uitgevoerd:  
