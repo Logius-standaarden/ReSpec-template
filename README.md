@@ -52,7 +52,7 @@ Deze code voegt 2 markdown files toe:
 
 voor een volledige lijst van CSS classes zie de [ReSpec Documentation](https://respec.org/docs/#css-classes)
 
-Deze classes zijn ook binnen de markdown files te gebruiken op de volgene manier:
+Deze classes zijn ook binnen de markdown files te gebruiken op de volgene manier:  
 ```<div class="example">voorbeeld</div>```
 
 ### Automatische controles
