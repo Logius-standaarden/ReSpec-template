@@ -48,15 +48,6 @@ aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel rele
 toe te voegen aan het ```content``` object in de ```config.js```. 
 De volgorde van ```content``` bepaald de volgorde in het resulterende document.
 
-Je hebt bijvoorbeeld een nieuwe markdown file die "ch02" heet die je toe wilt voegen aan de content:
-originele content heeft 1 markdown file met de naam `ch01.md` en de CSS class `informative`.  
-```content: {"ch01": "informative"},```  
-
-Hier is de `ch02.md` file toegevoegt aan de content en zonder CSS class. In het resulterende bestand
-zal `ch01` bovenaan staan met daarna `ch02` omdat ze in die volgorder in de content configuratie staan.  
-```content: {"ch01": "informative", "ch02": ""},```  
-
-
 ```content: {"ch01": "informative", "mermaid": ""},```
 Deze code voegt 2 markdown files toe:
 - `ch01.md` met de CSS class `informative`
