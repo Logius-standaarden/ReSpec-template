@@ -31,7 +31,7 @@ voor meer informatie over de configuratieopties. De files zijn gesplitst in 2 fi
 De organisation_config bevat informatie over de organisatie, de informatie in deze file 
 zal bijna nooit veranderen zoals de naam van de organisatie. Het wordt aangeraden de file 
 zelf te hosten zodat hij in alle documentatie van de organisatie gebruikt kan worden en
-niet elke keer gekopieerd te worden.
+niet elke keer gekopieerd hoeft te worden.
 
 De document_config zal informatie bevatten die alleen relevant is voor het huidige document.
 
