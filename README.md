@@ -74,4 +74,13 @@ outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repo
 
 ### Publiceren van documenten
 Na een update in de main branch wordt er een statische HTML en een PDF-versie gemaakt.
-Dit zijn `snapshot.html` en `doc.pdf` deze bestanden zijn te vinden in de root file van het project. Deze files kunnen daarna gepubliceerd worden.
+Dit zijn `snapshot.html` en `template.pdf` deze bestanden zijn te vinden in de root file van het project. Deze files kunnen daarna gepubliceerd worden.
+De PDF-versie wordt aangemaakt indien `alternateFormats` in `config.js` geconfigureerd staat:
+```js
+alternateFormats: [
+  {
+	  label: "pdf",
+	  uri: "template.pdf",
+  },
+]
+```
