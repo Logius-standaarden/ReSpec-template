@@ -1,6 +1,9 @@
 ## ReSpec template instructies
 
 ReSpec is een tool om html en pdf documenten te genereren op basis van markdown content.
+[Algemene documentatie over ReSpec staat online](https://respec.org/docs/). Dit document
+gaat over het NL GOV profiel, een versie met aanpassingen en toevoegingen bedoeld voor
+Nederlandse overheden.
 
 Gebruik de knop [_Use this template_](https://github.com/Logius-standaarden/ReSpec-template/generate) om aan de slag te gaan. Dit maakt een kopie van de template in uw eigen GitHub repository die dan aangepast en uitgebreid kan worden.
 
