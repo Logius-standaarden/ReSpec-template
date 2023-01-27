@@ -1,4 +1,4 @@
-var respecConfig = {
+let respecConfig = {
   useLogo: true,
   useLabel: true,
   license: "cc0",
@@ -9,7 +9,6 @@ var respecConfig = {
   publishDate: "2022-06-24",
   publishVersion: "0.0.1",
   title: "titleText",
-  // previousPublishVersion: "(none)",
   content: {"ch01": "informative", "ch02": "", "mermaid": ""},
   editors:
     [

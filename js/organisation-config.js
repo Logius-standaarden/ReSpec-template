@@ -1,5 +1,5 @@
 // Plaats dit bestand op een centrale locatie voor hergebruik in meerdere documenten.
-var organisationConfig = {
+let  organisationConfig = {
   nl_organisationName: "Logius",
   nl_organisationStylesURL:
     "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
@@ -12,7 +12,14 @@ var organisationConfig = {
     width: 44,
     url: "https://www.logius.nl/standaarden",
   }],
-  
+
+  //github word in de achtergrond een groter object gemaakt, github verwijst hier naar github.repoURL
+  thisVersion: ["github"],
+  latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName"],
+  edDraftURI: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "publishDate", "/", "publishVersion"],
+  prevVersion: ["github"],
+
+
   addSectionLinks: true,
   postProcess: [window.respecMermaid.createFigures],
 
@@ -155,3 +162,5 @@ var organisationConfig = {
         }
     },
 }
+
+
