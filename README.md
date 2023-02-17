@@ -36,7 +36,7 @@ niet elke keer gekopieerd hoeft te worden
 
 De document_config bevat informatie die alleen relevant is voor het huidige document.
 
-Bijde configuratie bestanden worden gelinkt in de `index.html` file.
+Beide configuratie bestanden worden gelinkt in de `index.html` file.
 
 **Markdown files** bevatten de content van het document. Alle content
 kan in 1 document, maar het is aan te raden om de content te splitsen
@@ -46,7 +46,7 @@ makkelijker te maken.
 Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
 aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
 toe te voegen aan het ```content``` object in de ```config.js```. 
-De volgorde van ```content``` bepaald de volgorde in het resulterende document.
+De volgorde van ```content``` bepaalt de volgorde in het resulterende document.
 
 ```content: {"ch01": "informative", "mermaid": ""},```
 Deze code voegt 2 markdown files toe:
