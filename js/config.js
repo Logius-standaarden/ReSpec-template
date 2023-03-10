@@ -7,7 +7,11 @@ let respecConfig = {
   pubDomain: "dk",
   shortName: "template",
   publishDate: "2022-06-24",
-  publishVersion: "0.0.1",
+  publishVersion: "0.0.2",
+  
+  previousVersion: "0.0.1",
+  previousPublishDate: "2014-05-01",
+  previousMaturity: "EO",
   title: "titleText",
   content: {"ch01": "informative", "ch02": "", "mermaid": ""},
   editors:
