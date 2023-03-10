@@ -11,6 +11,8 @@ var organisationConfig = {
         width: 44,
         url: "https://www.logius.nl/standaarden",
     }],
+	
+	postProcess: [window.respecMermaid.createFigures],
 
 	edDraftURI: ["github"],
 	latestVersion: ["nl_organisationPublishURL", "pubDomain", "/"],
