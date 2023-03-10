@@ -36,7 +36,7 @@ niet elke keer gekopieerd hoeft te worden
 
 De document_config bevat informatie die alleen relevant is voor het huidige document.
 
-Bijde configuratie bestanden worden gelinkt in de `index.html` file.
+Beide configuratie bestanden worden gelinkt in de `index.html` file.
 
 **Markdown files** bevatten de content van het document. Alle content
 kan in 1 document, maar het is aan te raden om de content te splitsen
@@ -46,7 +46,7 @@ makkelijker te maken.
 Na het toevoegen van een nieuwe markdown file moet hij toegevoegd worden
 aan de [index.html](index.html). Je voegt hem toe door de naam en eventueel relevante CSS class 
 toe te voegen aan het ```content``` object in de ```config.js```. 
-De volgorde van ```content``` bepaald de volgorde in het resulterende document.
+De volgorde van ```content``` bepaalt de volgorde in het resulterende document.
 
 ```content: {"ch01": "informative", "mermaid": ""},```
 Deze code voegt 2 markdown files toe:
@@ -74,4 +74,13 @@ outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repo
 
 ### Publiceren van documenten
 Na een update in de main branch wordt er een statische HTML en een PDF-versie gemaakt.
-Dit zijn `snapshot.html` en `doc.pdf` deze bestanden zijn te vinden in de root file van het project. Deze files kunnen daarna gepubliceerd worden.
+Dit zijn `snapshot.html` en `template.pdf` deze bestanden zijn te vinden in de root file van het project. Deze files kunnen daarna gepubliceerd worden.
+De PDF-versie wordt aangemaakt indien `alternateFormats` in `config.js` geconfigureerd staat:
+```js
+alternateFormats: [
+  {
+	  label: "pdf",
+	  uri: "template.pdf",
+  },
+]
+```
