@@ -63,52 +63,6 @@ var organisationConfig = {
         },
     },
 
-    specTypeText: {
-        en: {
-            no: "Norm",
-            st: "Standard",
-            im: "Information model",
-            pr: "Guideline",
-            hr: "Guide",
-            wa: "Proposed recommendation",
-            al: "General",
-            bd: "Governance documentation",
-            bp: "Best practice",
-        },
-        nl: {
-            no: "Norm",
-            st: "Standaard",
-            im: "Informatiemodel",
-            pr: "Praktijkrichtlijn",
-            hr: "Handreiking",
-            wa: "Werkafspraak",
-            al: "Algemeen",
-            bd: "Beheerdocumentatie",
-            bp: "Best practice",
-        },
-    },
-
-    specStatusText: {
-        en: {
-            wv: "Draft",
-            cv: "Recommendation",
-            vv: "Proposed recommendation",
-            def: "Definitive version",
-            basis: "Document",
-            eo: "Outdated version",
-            tg: "Rescinded version",
-        },
-        nl: {
-            wv: "Werkversie",
-            cv: "Consultatieversie",
-            vv: "Versie ter vaststelling",
-            def: "Vastgestelde versie",
-            basis: "Document",
-            eo: "Verouderde versie",
-            tg: "Teruggetrokken versie",
-        },
-    },
-
     sotdText: {
         nl: {
             sotd: "Status van dit document",
