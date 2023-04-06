@@ -11,13 +11,12 @@ var organisationConfig = {
         width: 44,
         url: "https://www.logius.nl/standaarden",
     }],
-	
-	postProcess: [window.respecMermaid.createFigures],
 
-	edDraftURI: ["github"],
-	latestVersion: ["nl_organisationPublishURL", "pubDomain", "/"],
-	thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
-	prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "publishDate"],
+    postProcess: [window.respecMermaid.createFigures],
+
+    latestVersion: ["nl_organisationPublishURL", "pubDomain", "/"],
+    thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
+    prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "publishDate"],
     useLogo: true,
     useLabel: true,
 
