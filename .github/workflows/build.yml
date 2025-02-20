@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build
-    uses: Logius-standaarden/Automatisering/.github/workflows/build.yml@snapshot-in-repo
+    uses: Logius-standaarden/Automatisering/.github/workflows/build.yml@main
   check:
     needs: build
     name: Check
