@@ -17,7 +17,7 @@ let respecConfig = {
       {
         name: "Logius Standaarden",
         company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        companyURL: "https://logius.nl",
       }
     ],
   authors:
@@ -25,7 +25,7 @@ let respecConfig = {
       {
         name: "Logius Standaarden",
         company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        companyURL: "https://logius.nl",
       }
     ],
   github: "https://github.com/Logius-standaarden/ReSpec-template",
