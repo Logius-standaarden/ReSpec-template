@@ -12,4 +12,4 @@ jobs:
   check:
     needs: build
     name: Check
-    uses: Logius-standaarden/Automatisering/.github/workflows/check.yml@main    
+    uses: Logius-standaarden/Automatisering/.github/workflows/check.yml@main
