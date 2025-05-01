@@ -2,16 +2,16 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   license: "cc-by",
-  specStatus: "DEF",
+  specStatus: "WV",
   specType: "HR",
   pubDomain: "dk",
   shortName: "template",
   publishDate: "2023-06-21",
   publishVersion: "0.0.3",
-  
-  previousPublishVersion: "0.0.2",
-  previousPublishDate: "2022-06-24",
-  previousMaturity: "WV",
+
+  // TODO: Verwijder voordat de release plaats vindt
+  latestVersion: "https://github.com/logius-standaarden/respec-template/",
+
   editors:
     [
       {
