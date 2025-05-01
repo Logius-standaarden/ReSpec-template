@@ -9,7 +9,7 @@ let respecConfig = {
   publishDate: "2023-06-21",
   publishVersion: "0.0.3",
 
-  // TODO: Update voordat de release plaats vindt
+  // TODO: Verwijder voordat de release plaats vindt
   latestVersion: "https://github.com/logius-standaarden/respec-template/",
 
   editors:
