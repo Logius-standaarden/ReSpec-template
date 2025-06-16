@@ -11,6 +11,7 @@ let respecConfig = {
 
   // TODO: Verwijder voordat de release plaats vindt
   latestVersion: "https://github.com/logius-standaarden/respec-template/",
+  prevVersion: [],
 
   editors:
     [
