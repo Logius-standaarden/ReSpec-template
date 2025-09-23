@@ -32,13 +32,4 @@ loadRespecWithConfiguration({
       }
     ],
   github: "https://github.com/Logius-standaarden/ReSpec-template",
-
-
-  // Create PDF and link to file in header (optional):
-  alternateFormats: [
-    {
-      label: "pdf",
-      uri: "template.pdf",
-    },
-  ],
 });
