@@ -74,12 +74,4 @@ outputs van deze tests zijn te vinden in het tabblad `Actions` in de GitHub repo
 
 ### Publiceren van documenten
 Na een update in de main branch wordt er een statische HTML en een PDF-versie gepubliceerd, indien de repo onder [Logius-standaarden](https://github.com/Logius-standaarden) op GitHub staat.
-De PDF-versie wordt aangemaakt indien `alternateFormats` in `config.js` geconfigureerd staat:
-```js
-alternateFormats: [
-  {
-	  label: "pdf",
-	  uri: "template.pdf",
-  },
-]
-```
+Er wordt automatisch een PDF versie als alternatief format aangemaakt.
